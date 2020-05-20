@@ -56,9 +56,12 @@
             position: fixed
             z-index: 2
             left: -100%
-            width: 50%
+            width: 0%
             height: 100vh
             background-color: rgba(0,0,0, .8)
+            transition: 0.5s all
+            padding-top: 0
+            min-width: 0
             &_wrapper
                 flex-direction: column
                 justify-content: center
@@ -71,6 +74,7 @@
                 line-height: 40px
             &_active
                 left: 0
+                width: 50%
                 
             
         .logo_descr
@@ -115,8 +119,11 @@
             display: block
         &_item
             margin-top: 10px
-    nav
-        width: 50%
+@media (min-width: 320px)
+    .promo
+        &_title
+            font-size: 30px
+        
             
         
 
