@@ -1,0 +1,126 @@
+@media (max-width: 1200px)
+    .promo
+        &_title
+            font-size: 36px
+@media (max-width: 991px)
+    .logo
+        &_descr
+            font-size: 30px
+    header
+        .nav
+            &_text
+                font-size: 18px
+        .logo_descr
+            font-size: 30px
+        .logo_round
+            width: 36px
+            height: 36px
+            font-size: 28px
+    .main
+        &_round
+            width: 165px
+            height: 165px
+        &_title
+            font-size: 19px
+        &_subtitle
+            font-size: 12px
+    .shop
+        &_title
+            font-size: 36px
+            text-align: center
+            position: relative
+            &:before
+                position: absolute
+                top: -50px
+                left: 50%
+                transform: translateX(-50%)
+                content: ''
+                display: block
+                width: 50px
+                height: 40px
+                background: url(../img/cart.png) center center/cover no-repeat
+
+        &_img
+            display: none
+        &_subtitle
+            font-size: 23px
+            text-align: center
+        &_descr
+            font-size: 14px
+            text-align: justify
+@media (max-width: 767px)
+    header
+        .hamburger
+            display: block
+        .nav
+            position: fixed
+            z-index: 2
+            left: -100%
+            width: 50%
+            height: 100vh
+            background-color: rgba(0,0,0, .8)
+            &_wrapper
+                flex-direction: column
+                justify-content: center
+                align-items: center
+            &_item
+                width: 100%
+                margin-top: 10%
+            &_text
+                color: white
+                line-height: 40px
+            &_active
+                left: 0
+                
+            
+        .logo_descr
+            font-size: 20px
+        .logo_round
+            width: 30px
+            height: 30px
+            font-size: 23px
+    .promo
+        &_title
+            font-size: 27px
+        &_subtitle
+            font-size: 20px
+    .main
+        &_round
+            width: 125px
+            height: 125px
+        &_img
+            width: 75px
+            &:first-child
+                width: 50px
+        &_title
+            font-size: 17px
+        &_subtitle
+            font-size: 10px
+@media (max-width: 575px)
+    header
+        padding: 5px 0
+    .promo
+        &_title
+            font-size: 31px
+            text-align: right
+        &_subtitle
+            text-align: right
+            float: right
+            br
+                display: none
+        &_btn
+            float: right
+    .main
+        &_wrapper
+            display: block
+        &_item
+            margin-top: 10px
+    nav
+        width: 0
+            
+        
+
+
+    
+
+

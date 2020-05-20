@@ -1,0 +1,172 @@
+*
+    font-family: 'Raleway',sans-serif
+header
+    padding-top: 24px
+    padding-bottom: 22px
+    position: fixed
+    width: 100%
+    background-color: #fff
+    z-index: 1
+    .hamburger
+        width: 30px
+        height: 20px
+        position: absolute
+        right: 10px
+        display: none
+        span
+            display: block
+            height: 2px
+            margin-top: 5px
+            background-color: #000000
+
+    .logo
+        &_round
+            display: inline-block
+            border-radius: 100%
+            width: 44px
+            height: 44px
+            background-color: #5094f2
+            color: #ffffff;
+            font-size: 32px;
+            font-weight: 400;
+            font-style: italic
+            text-align: center
+            padding-right: 5px
+        &_descr
+            display: inline-block
+            color: #000000
+            font-size: 42px
+            font-weight: 300
+            letter-spacing: 0.42px;
+            vertical-align: top
+            margin-top: 3px
+    .nav
+        min-width: 394px
+        padding-top: 20px    
+        &_wrapper
+            display: flex
+            justify-content: space-around
+            align-items: center
+        &_item
+            display: inline-block
+            position: relative
+            &:after
+                content: ''
+                position: absolute
+                display: block
+                width: 0%
+                height: 3px
+                background-color: #5094f2
+                vertical-align: bottom
+                margin: 0
+                padding: 0
+                transition: 0.5s all
+            &:hover:after
+                width: 100%
+
+
+        &_text
+            color: #6c6c6c;
+            font-size: 20px;
+            font-weight: 400;
+            letter-spacing: 0.2px;
+.promo
+    background: url(../img/bg/headerbg.png) center center/cover no-repeat
+    padding-top: 153px
+    padding-bottom: 134px
+    &_title
+        color: #ffffff
+        font-size: 42px
+        font-weight: 300
+    &_subtitle
+        color: #ffffff
+        font-size: 26px
+        font-weight: 300
+    &_btn
+        width: 172px
+        height: 41px
+        display: block
+        margin-top: 32px
+        background-color: #5094f2
+        border: none
+        &:hover
+            background-color: #3f7cd1
+.main
+    padding-top: 73px
+    padding-bottom: 45px
+    background: url(../img/bg/main_bg.png) center center/cover no-repeat
+    
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+    &_item
+    &_round
+        margin: 0 auto
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 186px
+        height: 186px
+        background-color: #5094f2
+        border-radius: 100%
+    &_round_second
+        background-color: #d94748
+    &_round_third
+        background-color: #ebbb11
+    &_title
+        color: #5094f2
+        font-size: 20px
+        font-weight: 400
+        text-align: center
+        margin-top: 28px
+    &_subtitle
+        color: #909090
+        font-size: 14px
+        font-weight: 400   
+        text-align: center   
+        margin-top: 3px      
+.shop
+    padding-top: 45px
+    padding-bottom: 50px
+    &_title
+        color: #6f7173
+        font-size: 42px
+        font-weight: 400
+        line-height: 30px
+    &_img
+        margin-top: 33px
+    &_subtitle
+        margin-top: 30px
+        color: #6f7173
+        font-size: 26px
+        font-weight: 400
+    &_descr
+        margin-top: 34px
+        color: #909090
+        font-size: 15px
+        font-weight: 300
+        line-height: 36px   
+.footer
+    padding-top: 33px
+    padding-bottom: 44px
+    position: relative
+    &:before
+        position: absolute
+        top: -10px
+        content: ''
+        display: block
+        height: 1px
+        width: 100%
+        opacity: 0.1
+        background-color: #000000
+
+    &_descr
+        margin: 0 auto
+        color: #909090
+        font-size: 15px
+        font-weight: 300
+        text-align: center
+@import "media"
+
+            
